@@ -1,0 +1,38 @@
+.canvasbar {
+    height: 100%;
+    width: 0;
+    max-width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: #fff;
+    overflow-x: hidden;
+    padding: 20px 0;
+    transition: 0.5s;
+
+    &__links {
+        margin: 20px 0;
+    }
+
+    &__item {
+
+        a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 1rem;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+    }
+
+    &__close-icon {
+        text-align: end;
+        margin-right: 20px;
+    }
+
+    &__logo {
+        text-align: center;
+    }
+}

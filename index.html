@@ -9,6 +9,96 @@
 
 <body>
 
+  <section class="main" id="main">
+
+    <header class="header">
+      <div class="header__box">
+        <div class="nav">
+          <div class="nav__logo">
+            <img src="/src/assets/logos/logo-seti-gold.png" alt="sity-logo">
+          </div>
+          <div class="nav__links">
+            <ul class="nav__list">
+              <div class="nav__items">
+                <a href="">Про нас</a>
+              </div>
+              <div class="nav__items">
+                <a href="">Меню</a>
+              </div>
+              <div class="nav__items">
+                <a href="">Бар</a>
+              </div>
+              <div class="nav__items">
+                <a href="">Бенкети</a>
+              </div>
+              <div class="nav__items">
+                <a href="">Галерея</a>
+              </div>
+              <div class="nav__items">
+                <a href="">Блог</a>
+              </div>
+              <div class="nav__items">
+                <a href="">Контакти</a>
+              </div>
+            </ul>
+          </div>
+          <div class="nav__instagram-icon">
+            <a href="https://www.instagram.com/"> <img src="/src/assets/icons/icons8-instagram-40.png"
+                alt="instagram"></a>
+          </div>
+          <div class="nav__toggle">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="canvasbar" id="mySideNav">
+      <div class="canvasbar__close-icon" onclick="closeNav()">
+        <img src="/src/assets/icons/icons8-close-window-40.png" alt="close">
+      </div>
+      <div class="canvasbar__logo">
+        <img src="/src/assets/logos/logo-seti.png" alt="bule-logo">
+      </div>
+      <div class="canvasbar__links">
+        <ul class="canvasbar__list">
+          <div class="canvasbar__item">
+            <a href="">Про нас</a>
+          </div>
+          <div class="canvasbar__item">
+            <a href="">Меню</a>
+          </div>
+          <div class="canvasbar__item">
+            <a href="">Бар</a>
+          </div>
+          <div class="canvasbar__item">
+            <a href="">Бенкети</a>
+          </div>
+          <div class="canvasbar__item">
+            <a href="">Галерея</a>
+          </div>
+          <div class="canvasbar__item">
+            <a href="">Блог</a>
+          </div>
+          <div class="canvasbar__item">
+            <a href="">Контакти</a>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySideNav").style.width = "300px";
+      document.getElementById("main").style.marginRight = "300px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySideNav").style.width = "0";
+      document.getElementById("main").style.marginRight = "0";
+    }
+  </script>
   <script type="module" src="/src/js/main.js"></script>
 </body>
 
