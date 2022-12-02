@@ -1,0 +1,53 @@
+.accordeon {
+
+    .accordeon-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__btn {
+            border: none;
+            background: none;
+            align-items: center;
+            display: flex;
+
+            img {
+                width: 20px;
+                height: 20px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+
+        &__btn:active {
+
+            img {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .accordeon-text {
+        display: none;
+    }
+
+    &__item {
+
+        a {
+            font-size: 14px;
+        }
+
+        a:hover {
+            color: $hover-color;
+        }
+    }
+}
+
+.show-text {
+
+    .accordeon-text {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        padding: 13px 13px 0;
+    }
+}
